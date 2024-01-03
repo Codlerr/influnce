@@ -9,7 +9,7 @@ import handwear from '../assets/handwear.png'
 import eyewear from '../assets/eyewear.png'
 function CategoryCard() {
     return (
-        <div className='grid grid-cols-4 space-x-10 space-y-10'>
+        <div className='grid grid-cols-4 '>
             <div>
                 <img src={ethnicwear} alt='' />
                 <div className='mt-5'>
