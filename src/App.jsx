@@ -11,6 +11,12 @@ import {
 import LandingPage from './pages/landingPage'
 import Footer from './components/footer'
 import ProductsPage from './pages/productsPage'
+import OrderConfirmedPage from './pages/orderConfirmedPage'
+import ProductDetailsPage from './pages/productDetailsPage'
+import BasketPage from './pages/basketPage'
+import InformationPage from './pages/informationPage'
+import ShippingPage from './pages/shippingPage'
+import PaymentPage from './pages/paymentPage'
 
 const Layout = () => {
   return (
@@ -34,6 +40,30 @@ const router = createBrowserRouter([
       {
         path: '/products',
         element: (<ProductsPage />)
+      },
+      {
+        path: '/details',
+        element: (<ProductDetailsPage />)
+      },
+      {
+        path: '/basket',
+        element: (<BasketPage />)
+      },
+      {
+        path: '/successful',
+        element: (<OrderConfirmedPage />)
+      },
+      {
+        path: '/shipping',
+        element: (<ShippingPage/>)
+      },
+      {
+        path: '/paymentpage',
+        element: (<PaymentPage/>)
+      },
+      {
+        path: '/info',
+        element: (<InformationPage/>)
       }
       
     ]

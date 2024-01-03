@@ -23,6 +23,8 @@ import Metallic from '../assets/metallic.png';
 import Satin from '../assets/satin.png';
 import WhatsHappening from '../components/whatsHappening'
 import NewArrivals from '../components/newArrivals'
+import { Link } from 'react-router-dom'
+import Comments from '../components/comments'
 function LandingPage() {
   return (
     <div>
@@ -34,13 +36,15 @@ function LandingPage() {
         </div>
         <p className='text-[#0D0D0C] font-extrabold text-4xl text-center my-8'>New Arrivals</p>
       </div>
+      <Link to='/products'>
       <NewArrivals/>
+      </Link>
 
       <div className='px-20'>
         <div className='flex mt-16 justify-between'>
-          <p className='w-2/4 text-4xl font-semibold'>Exceptional <span className='text-[#E39B6A] font-museo-moderno'>INFLUENCERS</span> for
+          <p className='w-2/4 text-4xl font-semibold'>Exceptional <span className='text-[#005342] font-museo-moderno'>INFLUENCERS</span> for
             exceptional brands.</p>
-          <p className='text-2xl font-semibold underline'>See all </p>
+          <p className='text-2xl font-semibold underline cursor-pointer'>See all </p>
         </div>
         <div>
           <p className='text-[#0D0D0C] w-2/4 text-xl font-medium mt-5'>Influencers boost fashion brands through relatable content,<br></br>
@@ -60,7 +64,7 @@ function LandingPage() {
         </div>
         <div className='flex justify-between'>
           <p className='w-2/4 text-4xl font-semibold'>Beach wear collection from KARI</p>
-          <p className='text-2xl font-semibold underline'>See all</p>
+          <p className='text-2xl font-semibold underline cursor-pointer'>See all</p>
         </div>
         <div className='flex'>
           {Beach.map((item, index) => (
@@ -81,7 +85,7 @@ function LandingPage() {
         <div className='flex justify-around mx-16 mt-20'>
         {Colors.map((item) => (
           <div>
-            <div className={`p-5 border bg-[${item.color}] rounded-full w-20 h-20`}></div>
+            <div className={`p-5 border rounded-full w-20 h-20`} style={{ backgroundColor: item.color }}></div>
             <p className='text-[#0D0D0C] text-center font-semibold mt-3 text-lg'>{item.name}</p>
           </div>
         ))}
@@ -94,7 +98,7 @@ function LandingPage() {
           </div>
           {Colors2.map((item) => (
             <div>
-              <div className={`p-5 border bg-[${item.color}] rounded-full w-20 h-20`}></div>
+              <div className={`p-5 border rounded-full w-20 h-20`} style={{ backgroundColor: item.color }}></div>
               <p className='text-[#0D0D0C] text-center font-semibold mt-3 text-lg'>{item.name}</p>
             </div>
           ))}
@@ -169,6 +173,8 @@ function LandingPage() {
             <p className='text-[#0D0D0C] text-center mt-3 text-lg font-semibold'>Satin</p>
           </div>
         </div>
+        </div>
+        <div className='px-20'>
         <WhatsHappening />
       </div>
     </div>

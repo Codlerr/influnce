@@ -19,13 +19,17 @@ export default {
       'rock-3d': ['Rock 3D', 'cursive'],
       'sacramento': ['Sacramento', 'cursive'],
       'Quattrocento':['Quattrocento Sans', 'sans-serif'],
+      'poppins': ['poppins'],
+      'Montserrat' : ['Montserrat']
     },
     backgroundImage: {
       'banner': "url('./assets/banner.png')",
-      'footer-texture': "url('/img/footer-texture.png')"
+      'footer-texture': "url('/img/footer-texture.png')",
+      'comment' : "url('./assets/comments.png')"
       
     }
   },
   },
   plugins: [],
+  
 }
