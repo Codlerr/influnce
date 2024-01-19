@@ -17,6 +17,7 @@ import BasketPage from './pages/basketPage'
 import InformationPage from './pages/informationPage'
 import ShippingPage from './pages/shippingPage'
 import PaymentPage from './pages/paymentPage'
+import ProfilePage from './pages/profilePage'
 
 const Layout = () => {
   return (
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
       {
         path: '/paymentpage',
         element: (<PaymentPage/>)
+      },
+      {
+        path: '/profilepage',
+        element: (<ProfilePage/>)
       },
       {
         path: '/info',

@@ -13,37 +13,43 @@ const newArrivalData = [
     {
         image:`${alos}`,
         logo:`${aloslogo}`,
-        newArrival: '20'
+        newArrival: '20',
+        brand:'alos'
 
     },
     {
         image:`${berra}`,
         logo:`${berralogo}`,
-        newArrival: '20'
+        newArrival: '20',
+        brand:'berra'
 
     },
     {
         image:`${episode}`,
         logo:`${episodelogo}`,
-        newArrival: '20'
+        newArrival: '20',
+        brand:'episode'
 
     },
     {
         image:`${alos2}`,
         logo:`${aloslogo}`,
-        newArrival: '20'
+        newArrival: '20',
+        brand:'alos'
 
     },
     {
         image:`${kari}`,
         logo:`${karilogo}`,
-        newArrival: '20'
+        newArrival: '20',
+        brand : 'kari'
 
     },
     {
         image:`${episode2}`,
         logo:`${episodelogo}`,
-        newArrival: '20'
+        newArrival: '20',
+        brand : 'kari'
 
     }
 ]
