@@ -13,7 +13,7 @@ import xii from './assets/12.png'
 const productListData = [
     {
         image:`${i}`,
-        brand: 'BERRA',
+        brand: 'ALOS',
         prdname : 'Women Yellow Pure Cotton',
         newPrize : '2,035',
         oldPrize : '4,029'
@@ -27,14 +27,14 @@ const productListData = [
     },
     {
         image:`${iii}`,
-        brand: 'BERRA',
+        brand: 'EPISODE',
         prdname : 'Women Yellow Pure Cotton',
         newPrize : '2,000',
         oldPrize : '4,029'
     },
     {
         image:`${iv}`,
-        brand: 'BERRA',
+        brand: 'KARI',
         prdname : 'Women Yellow Pure Cotton',
         newPrize : '1,245',
         oldPrize : '4,029'
@@ -55,7 +55,7 @@ const productListData = [
     },
     {
         image:`${vii}`,
-        brand: 'BERRA',
+        brand: 'ALOS',
         prdname : 'Women Yellow Pure Cotton',
         newPrize : '1,245',
         oldPrize : '4,029'
@@ -69,7 +69,7 @@ const productListData = [
     },
     {
         image:`${ix}`,
-        brand: 'BERRA',
+        brand: 'EPISODE',
         prdname : 'Women Yellow Pure Cotton',
         newPrize : '2,000',
         oldPrize : '4,029'
@@ -83,14 +83,14 @@ const productListData = [
     },
     {
         image:`${xi}`,
-        brand: 'BERRA',
+        brand: 'KARI',
         prdname : 'Women Yellow Pure Cotton',
         newPrize : '1,245',
         oldPrize : '4,029'
     },
     {
         image:`${xii}`,
-        brand: 'BERRA',
+        brand: 'ALOS',
         prdname : 'Women Yellow Pure Cotton',
         newPrize : '2,029',
         oldPrize : '4,029'

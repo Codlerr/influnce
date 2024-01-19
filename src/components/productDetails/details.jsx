@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import QuantityButton from '../quantity'
 import { Link } from 'react-router-dom'
 
 function Details() {
+  const [selectedColor, setSelectedColor] = useState('Yellow');
+
+  const handleColorClick = (color) => {
+    setSelectedColor(color);
+  };
   return (
     <div className='mr-20 mt-10'>
       <p className='font-poppins font-bold text-lg'>BERRA</p>
-      <p className='font-poppins font-bold text-xl'>Women Yellow Pure Cotton Floral Print Straight Kurta</p>
+      <p className='font-poppins font-bold text-xl'>Women {selectedColor} Pure Cotton Floral Print Straight Kurta</p>
       <div className='flex justify-between mt-10'>
       <div className='flex'>
       <p className='text-[#005342] font-bold font-poppins mr-4'>₹2960</p>
@@ -15,9 +20,18 @@ function Details() {
       <p className='text-[#84E75A] font-poppins text-sm font-bold'>Flat 50% off</p>
       </div>
       <div className='flex mt-5'>
-      <p className='font-poppins font-bold mr-2 text-sm'>Color </p><p className='text-sm'>(Yellow)</p>
+      <p className='font-poppins font-bold mr-2 text-sm'>Color </p><p className='text-sm'>({selectedColor})</p>
       </div>
-      <div className='bg-yellow-500 rounded-full my-2 w-4 h-4 border'></div>
+      <div className='flex'>
+      <div
+          className='bg-yellow-500 rounded-full my-2 w-6 h-6 border cursor-pointer mr-4'
+          onClick={() => handleColorClick('Yellow')}
+        ></div>
+        <div
+          className='bg-pink-300 rounded-full my-2 w-6 cursor-pointer h-6 border'
+          onClick={() => handleColorClick('Pink')}
+        ></div>
+        </div>
       <div className='flex justify-between mt-5'>
       <p className='font-poppins font-bold mr-2 text-sm mb-2 mt-5'>Size</p>
       <p className='font-poppins font-bold mr-2 text-[#7C3FFF] text-xs mb-2 mt-5'>Size Guide</p>
@@ -39,6 +53,9 @@ function Details() {
       <p className='cursor-pointer w-full rounded text-sm text-center mb-4 border border-[gray] font-poppins py-2 '>Buy Now</p>
       </Link>
     </div>
+
+
+    
   )
 }
 
